@@ -1,0 +1,7 @@
+-- 데이터 추가
+-- INSERT INTO UserInfos (name, age, sex, contact, createdAt, updatedAt) VALUES ("박기용", 35, "남", "수원", "2022-12-29 11:07:00", "2022-12-29 11:07:00");
+-- INSERT INTO UserInfos (name, age, sex, contact, createdAt, updatedAt) VALUES ("신정우", 34, "남", "광주", "2022-12-29 11:07:00", "2022-12-29 11:07:00");
+-- INSERT INTO UserInfos (name, age, sex, contact, createdAt, updatedAt) VALUES ("강주아", 28, "여", "안양", "2022-12-29 11:07:00", "2022-12-29 11:07:00");
+-- INSERT INTO UserInfos (name, age, sex, contact, createdAt, updatedAt) VALUES ("김병선", 24, "남", "서울", "2022-12-29 11:07:00", "2022-12-29 11:07:00");
+-- INSERT INTO UserInfos (name, age, sex, contact, createdAt, updatedAt) VALUES ("임현수", 41, "남", "서울", "2022-12-29 11:07:00", "2022-12-29 11:07:00");
+-- INSERT INTO UserInfos (name, age, sex, contact, createdAt, updatedAt) VALUES ("김태진", 32, "여", "부산", "2022-12-29 11:07:00", "2022-12-29 11:07:00");

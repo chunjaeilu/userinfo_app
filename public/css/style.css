@@ -1,0 +1,165 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  color: #333;
+}
+
+label {
+  display: none;
+}
+
+.wrap {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.header form {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header input {
+  padding: 4px;
+}
+
+.header button {
+  padding: 3px 5px;
+  border: 0.1px solid #333;
+  background: #fafaff;
+  color: #333;
+  border-radius: 2px;
+}
+
+.header button:hover {
+  background: #333;
+  color: #fff;
+}
+
+.total-users {
+  margin-top: 20px;
+  color: #999;
+  font-size: 14px;
+  text-align: right;
+}
+
+.user-list {
+  margin-top: 5px;
+}
+
+.user-list li {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 35px;
+  border-bottom: 0.1px solid #ccc;
+}
+
+.user-list li:last-child {
+  border-bottom: 1px solid #666;
+}
+
+.user-list li.list-head {
+  font-weight: 700;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+  background: #f6f6ff;
+}
+
+.user-list .list-head span {
+  font-size: 15px;
+}
+
+.user-list li p {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-list li p span {
+  width: 20%;
+  font-size: 14px;
+}
+
+.user-list li p span.contact {
+  width: 40%;
+}
+
+.user-list button {
+  padding: 3px 5px;
+  border: 0.1px solid #f55;
+  background: none;
+  color: #f55;
+  border-radius: 2px;
+}
+
+.user-list button:hover {
+  background: #f55;
+  color: #fff;
+}
+
+.new-userinfo {
+  margin-top: 30px;
+}
+
+.new-userinfo .new-user {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.new-userinfo .new-user .new-user-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.new-userinfo .new-user .new-user-head button {
+  padding: 3px 5px;
+  border: 0.1px solid #55f;
+  background: none;
+  color: #55f;
+  border-radius: 2px;
+}
+
+.new-userinfo .new-user .new-user-head button:hover {
+  background: #55f;
+  color: #fff;
+}
+
+.new-user input {
+  padding: 4px;
+}
+
+.new-userinfo .user_sex_box label {
+  display: inline;
+  font-size: 14px;
+}
+
+.new-userinfo .user_sex_box {
+  display: flex;
+  gap: 30px;
+}
