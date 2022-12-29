@@ -27,9 +27,9 @@
 
 <table>
 <tr>
-<td><img src="https://github.com/chunjaeilu/userinfo_app/blob/master/public/images/app_01_main.png?raw=true" height="250"><p>메인화면</p></td>
-<td><img src="https://github.com/chunjaeilu/userinfo_app/blob/master/public/images/app_02_search.png?raw=true" height="250"><p>검색 예시</p></td>
-<td><img src="https://github.com/chunjaeilu/userinfo_app/blob/master/public/images/app_03_del.png?raw=true" height="250"><p>삭제 예시</p></td>
+<td><img src="https://github.com/chunjaeilu/userinfo_app/blob/master/public/images/app_01_main.png?raw=true" width="250"><p>메인화면</p></td>
+<td><img src="https://github.com/chunjaeilu/userinfo_app/blob/master/public/images/app_02_search.png?raw=true" width="250"><p>검색 예시</p></td>
+<td><img src="https://github.com/chunjaeilu/userinfo_app/blob/master/public/images/app_03_del.png?raw=true" width="250"><p>삭제 예시</p></td>
 </tr>
 </table>
 
