@@ -72,12 +72,19 @@ label {
   overflow-y: scroll;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
 }
 
 .list-wrap::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  width: 5px;
+}
+
+.list-wrap::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+
+.list-wrap::-webkit-scrollbar-track {
+  background: none;
 }
 
 .user-list {

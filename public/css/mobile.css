@@ -89,12 +89,6 @@ button {
   overflow-y: scroll;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-.list-wrap::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
 }
 
 .user-list {
