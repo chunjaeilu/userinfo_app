@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/css/style.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/mobile.css"
+      media="screen and (max-width: 767px)"
+    />
   </head>
   <body>
     <div class="wrap">
@@ -23,33 +32,46 @@
         </form>
       </div>
       <p class="total-users">Total Users : <%= userInfos.length %></p>
-      <ul class="user-list">
-        <li class="list-head">
-          <p>
-            <span>id</span><span>이름</span><span>나이</span><span>성별</span
-            ><span class="contact">연락처</span>
-          </p>
-          <div></div>
-        </li>
-        <% for( let i = userInfos.length - 1; i >= 0; i-- ) { %>
-        <li>
-          <p>
-            <span><%= userInfos[i].id %></span>
-            <span><%= userInfos[i].name %></span>
-            <span><%= userInfos[i].age %></span>
-            <span><%= userInfos[i].sex %></span>
-            <span class="contact"><%= userInfos[i].contact %></span>
-          </p>
-          <form
-            action="del/<%= userInfos[i].id %>"
-            method="post"
-            onsubmit="let result = confirm('삭제하시겠습니까?');if(!result) return false;"
-          >
-            <button type="submit">삭제</button>
-          </form>
-        </li>
+      <div class="list-wrap">
+        <table class="user-list">
+          <thead>
+            <tr class="list-head">
+              <th>id</th>
+              <th>이름</th>
+              <th>나이</th>
+              <th>성별</th>
+              <th class="contact">연락처</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% for( let i = userInfos.length - 1; i >= 0; i-- ) { %>
+            <tr>
+              <td><%= userInfos[i].id %></td>
+              <td><%= userInfos[i].name %></td>
+              <td><%= userInfos[i].age %></td>
+              <td><%= userInfos[i].sex %></td>
+              <td class="contact">
+                <%= userInfos[i].contact.replace(/ /g,
+                "").replace(/^(\d{2,3})(\d{3,4})(\d{4})$/, `$1-$2-$3`), %>
+              </td>
+              <td>
+                <form
+                  action="del/<%= userInfos[i].id %>"
+                  method="post"
+                  onsubmit="let result = confirm('삭제하시겠습니까?');if(!result) return false;"
+                >
+                  <button type="submit">삭제</button>
+                </form>
+              </td>
+            </tr>
+            <% } %>
+          </tbody>
+        </table>
+        <% if (userInfos.length == 0) { %>
+        <p class="warn-txt">유저 정보를 찾을 수 없습니다.</p>
         <% } %>
-      </ul>
+      </div>
 
       <div class="new-userinfo">
         <form action="new_user" method="post" class="new-user">
@@ -98,8 +120,7 @@
             type="tel"
             name="user_tel"
             id="user_tel"
-            pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}"
-            placeholder="연락처( - 포함 입력)"
+            placeholder="연락처 입력(하이픈' - ' 생략)"
           />
         </form>
       </div>

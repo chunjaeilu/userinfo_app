@@ -1,4 +1,4 @@
-/* style.css */
+/* mobile.css */
 * {
   margin: 0;
   padding: 0;
@@ -16,16 +16,24 @@ a {
 
 body {
   color: #333;
+  font-size: 14px;
 }
 
 label {
   display: none;
 }
 
+input::placeholder {
+  font-size: 12px;
+}
+
+button {
+  font-size: 12px;
+}
+
 .wrap {
-  padding: 20px;
-  max-width: 600px;
-  margin: 0 auto;
+  padding: 20px 10px;
+  width: 100vw;
 }
 
 .header {
@@ -36,6 +44,10 @@ label {
   padding: 10px 0;
 }
 
+.header h1 {
+  font-size: 24px;
+}
+
 .header form {
   display: flex;
   align-items: center;
@@ -43,7 +55,12 @@ label {
 }
 
 .header input {
-  padding: 4px;
+  padding: 2px;
+  width: 150px;
+}
+
+.header input::placeholder {
+  font-size: 12px;
 }
 
 .header button {
@@ -62,13 +79,13 @@ label {
 .total-users {
   margin-top: 20px;
   color: #999;
-  font-size: 14px;
+  font-size: 12px;
   text-align: right;
 }
 
 .list-wrap {
   margin-top: 5px;
-  max-height: 387px;
+  max-height: 317px;
   overflow: scroll;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
@@ -78,25 +95,20 @@ label {
   width: 100%;
   text-align: center;
   border-collapse: collapse;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .user-list thead {
   background: #f5f5ff;
   position: sticky;
   top: 0px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .user-list th,
 .user-list td {
   height: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.user-list th:last-child {
-  width: 82.52px;
+  padding: 0 5px;
 }
 
 .user-list th {
@@ -162,7 +174,7 @@ label {
 
 .new-userinfo .user_sex_box label {
   display: inline;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .new-userinfo .user_sex_box {
